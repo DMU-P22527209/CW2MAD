@@ -402,7 +402,7 @@
 .page {
   width: 100%;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 
 }
 .page1, .page2 {
@@ -683,7 +683,7 @@ box-sizing: border-box;
 /*---------------Footer----------------*/
 
 main {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .socialmedias {

@@ -347,12 +347,9 @@
 }
 
 .social-flex {
+  display: flex;
   width: 100%;
   height: 350px;
-  overflow: hidden;
-  display: flex;
-  top: 0;
-  left: 0;
 }
 
 .slinks {
@@ -645,7 +642,11 @@ overflow: visible;
   padding: 0;
   width: 100%;
   height: 100%;
+}
 
+.social-flex {
+  display: block;
+  width: 100%;
 }
 
 /*---------------Slide----------------*/

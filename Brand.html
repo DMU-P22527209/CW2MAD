@@ -26,7 +26,7 @@
             <img src="Mats\MAD Logo White.png" alt="MAD Logo">
           </a>
         <li class="btn">
-          <a href="Original.html">Original</a>
+          <a href="Original.html">Primal</a>
         </li>
         <li class="btn">
           <a href="Savanna.html">Savanna</a>
@@ -43,12 +43,56 @@
         </ul>
         </div>
 
+        <button id="Btn">
+          <img src="Mats\Bra.png" alt="">
+          </button>
+
+           <!-- The Modal -->
+           <div id="info" class="modal">
+
+             <!-- Modal content -->
+             <div class="modal-content">
+
+               <!-- Tab Links -->
+               <div class="tab">
+               <div class="flex">
+                 <div class="BT">
+                 <button class="tablinks" id="SOCIALMEDIATab">SOCIALMEDIA</button>
+               </div>
+               </div>
+               </div>
+
+
+
+               <div class="tabcontent" id="SOCIALMEDIA">
+                 <div class="social-flex">
+                   <div class="flexbox-item-1">
+                     <div class="slinks">
+                         <a href="https://www.instagram.com/maljimd/"><h1>INSTAGRAM</h1></a>
+                     </div>
+                     <div class="slinks">
+                         <a href="https://www.facebook.com/aljim.deocampo"><h1>FACEBOOK</h1></a>
+                     </div>
+                   </div>
+                   <div class="flexbox-item-1">
+                     <div class="slinks">
+                       <a href="https://twitter.com/xLordMaxx"><h1>TWITTER</h1></a>
+                     </div>
+                     <div class="slinks">
+                       <a href="https://www.youtube.com/channel/UCpfUU1LbHd8aLt04fGJ4P0w"><h1>YOUTUBE</h1></a>
+                     </div>
+                   </div>
+                  </div>
+               </div>
+
+
+
+
         <div class="home-mobile-content">
         <div class="header-logo">
           <h1>MAD</h1>
         </div>
         </div>
-
            <!-- MENU - Social -->
            <div class="footer">
               <div class="nav-buttons">
@@ -85,5 +129,67 @@
               </div>
             </div>
           </div>
+
+
+          <script type="text/javascript">
+
+          //Modal
+          var modal = document.getElementById("info");
+
+          // button
+          var btn = document.getElementById("Btn");
+
+          //Appear
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+
+          //Click outside the modal = close
+          window.onclick = function(event) {
+           if (event.target == modal) {
+             modal.style.display = "none";
+           }
+             }
+
+             //Tabs
+
+                let currentTab;
+
+                handleButtonClick = (evt) => {
+                  let tabName = evt.target.innerText;
+                  showTabContent(tabName);
+                };
+
+              showTabContent = (tabName) => {
+                if (currentTab) {
+                let previousTab = document.getElementById(currentTab + "Tab");
+                previousTab.classList.remove("active");
+                document.getElementById(currentTab).style.display = "none";
+                }
+
+                // active class
+                let clickedButton = document.getElementById(tabName + "Tab");
+                clickedButton.classList.add("active");
+                // remove active class
+
+
+                // Show content tab
+                currentTab = clickedButton.innerText;
+                document.getElementById(currentTab).style.display = "block";
+              };
+
+
+              // Respond to a button click
+              let buttons = document.querySelectorAll(".tab button");
+              console.log(buttons);
+              for( let i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener("click", handleButtonClick);
+              }
+
+             showTabContent("SOCIALMEDIA");
+
+          </script>
+
+        </body>
 
           </html>

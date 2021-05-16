@@ -30,6 +30,8 @@
 
   body {
     background-image: url(../Mats/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   html,body
@@ -41,7 +43,8 @@
     overflow-x: hidden;
 }
 
-  main {
+  .mstore{
+    margin-bottom: 20px;
   }
 
   .home-pc-content {
@@ -51,9 +54,9 @@
     width: 100%;
   }
 
-.home-mobile-content {
-  display: none;
-}
+  .home-mobile-content {
+    display: none;
+  }
 
 
 /*---------------NAVIGATION----------------*/
@@ -97,7 +100,7 @@
   font-size: 14px;
   font-family: 'Exo 2', sans-serif;
   text-decoration: none;
-  padding:20px;
+  padding: 20px;
   color: white;
 }
 .active, a:hover {
@@ -106,6 +109,9 @@
 
 /*---------------SLIDES----------------*/
 
+.slider img:hover {
+  opacity: 0.5
+}
 
 /*---------MODAL BUTTON---------------*/
 
@@ -118,6 +124,10 @@
 
 #Btn img {
   width: 100%;
+}
+
+#Btn img:hover {
+  opacity: 0.8;
 }
 
 /*-----------MODAL STYLE----------------*/
@@ -251,7 +261,7 @@
   margin: 0;
   font-family: 'Blinker', sans-serif;
   background-color: inherit;
-  font-size: 3x`vh
+  font-size: 3vh;
 }
 
 .Products{
@@ -360,8 +370,7 @@
 .page {
   width: 100%;
   text-align: center;
-  margin-bottom: 60px;
-  padding: 20 0 20 0;
+  margin-bottom: 80px;
 
 }
 .page1, .page2 {
@@ -383,9 +392,6 @@
   padding: 10px;
   background-color: green;
   color: white;
-  position: absolute;
-  right: 10;
-  top: 10;
   border: none;
   border-radius: 15px;
 }
@@ -505,6 +511,11 @@ h2 {
 
 .copy-legal a {
   color: blue;
+}
+
+h6 {
+  color: white;
+  text-align: center;
 }
 
 .login-container a{
@@ -641,12 +652,15 @@ box-sizing: border-box;
 .header-logo {
   display: block;
 }
+.header-logo a {
+  text-decoration: none;
+}
 /*---------------STORE----------------*/
 
 /*---------------Footer----------------*/
 
 main {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .socialmedias {

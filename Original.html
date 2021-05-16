@@ -15,6 +15,7 @@
   </head>
 
   <body>
+    <!-- Web Navigation Menu -->
     <div class="nav">
     <ul class= "header-nav">
       <li>
@@ -40,7 +41,7 @@
       </ul>
     </div>
 
-    <!-- MENU - Social -->
+    <!-- Mobile Navigation Menu -->
     <div class="footer">
      <div class="nav-buttons">
      <div class="icons">
@@ -56,6 +57,7 @@
        <a href="Signup.html"><img src="Mats/Login.png" alt="Icon of a person"> </a>
        </div >
    </div>
+       <!-- Social Media Links -->
         <div class="socialmedias">
         <div class="Twiiter">
         <a href="https://twitter.com/xLordMaxx">  <img src="Mats/tw.png" alt="Twitter Logo"> </a>
@@ -76,10 +78,11 @@
         </div>
 
      <main>
-    <a class="prev" href="Brand.html" >&#10094;</a>
-    <a class="next" href="Taiga.html">&#10095;</a>
+           <!-- Next & Previous Page Buttons -->
+    <a class="prev" href="index.html" >&#10094;</a>
+    <a class="next" href="Savanna.html">&#10095;</a>
 
-
+    <!-- Modal Button -->
       <button id="Btn">
         <img src="Mats/Pri.png" alt="Dark Grey and black Geographical contour lines">
         </button>
@@ -102,11 +105,11 @@
              </div>
              </div>
 
+              <!-- Tab content -->
              <div class="tabcontent" id="ECLIPSE">
                <div class="flex-container">
 
                  <div class="flexbox-item-1">
-
                   <img src="Mats/PriH.png" alt="Dark Grey and black Geographical Contour Lines ">
                  </div>
 
@@ -135,7 +138,6 @@
                    <h1> THE ECLIPSE </h1>
 
                    <div class="Products">
-
                        <div class="items">
                          <img src="Mats/EclipseHoodie.png" alt=" Hoodie">
                        </div>
@@ -155,7 +157,6 @@
                        <div class="items">
                          <img src="Mats/EclipseBeanie.png" alt="Beanie">
                        </div>
-
                        <div class="items">
                          <img src="Mats/EclipseMask.png" alt="Face Mask">
                        </div>
@@ -164,16 +165,19 @@
                   <div class="shopping">
                     <a href="Shop.html"> SHOP NOW </a>
                   </div>
+
                    </div>
 
                 </div>
              </div>
-
+              <!-- 2nd Tab content -->
              <div class="tabcontent" id="SPARKLES">
                <div class="flex-container">
+
                  <div class="flexbox-item-1">
                    <img src="Mats/SpaH.png" alt="Grey and white heographical contour lines">
                  </div>
+
                  <div class="flexbox-item-2">
                    <div class="text">
                    <h1> SPARKLES </h1>
@@ -281,7 +285,7 @@
              for( let i = 0; i < buttons.length; i++) {
                buttons[i].addEventListener("click", handleButtonClick);
              }
-
+             //Active Tab
             showTabContent("ECLIPSE");
         </script>
 

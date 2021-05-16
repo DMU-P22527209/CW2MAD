@@ -16,8 +16,7 @@
 
   <body>
 
-    <!-- MENU - NAVIGATION -->
-<header>
+    <!-- Web Navigation Menu -->
     <div class="nav">
     <ul class= "header-nav">
       <li><a href="index.html" class="header-logo">
@@ -41,9 +40,8 @@
       </li>
       </ul>
     </div>
-</header>
 
-<!-- MENU mobile & Social -->
+<!-- MENU mobile -->
     <div class="footer">
      <div class="nav-buttons">
      <div class="icons">
@@ -59,6 +57,8 @@
        <a href="Signup.html"><img src="Mats/Login.png" alt="Icon of a person"> </a>
        </div >
    </div>
+
+   <!-- Social Media Links -->
         <div class="socialmedias">
         <div class="Twiiter">
         <a href="https://twitter.com/xLordMaxx">  <img src="Mats/tw.png" alt="Twitter Logo"> </a>
@@ -80,6 +80,7 @@
 
   <!-- Menu - Content -->
 
+  <!-- Web - Automatic Slideshow -->
     <main>
     <div class="home-pc-content">
       <div class="slider">
@@ -90,7 +91,7 @@
       </div>
     </div>
 
-
+    <!-- Mobile - Content Links -->
     <div class="home-mobile-content">
       <div class="header-logo">
         <a href="index.html"> <h1>MAD</h1> </a>
@@ -115,15 +116,19 @@
       </main>
 
       <script>
+
           var myIndex = 0;
           carousel();
 
+          //hide slide
           function carousel() {
             var i;
             var x = document.getElementsByClassName("mySlides");
             for (i = 0; i < x.length; i++) {
               x[i].style.display = "none";
             }
+
+          //change slides
             myIndex++;
             if (myIndex > x.length) {myIndex = 1}
             x[myIndex-1].style.display = "block";

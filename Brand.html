@@ -18,7 +18,7 @@
         </head>
 
         <body>
-
+          <!-- Web Navigation Menu -->
         <div class="nav">
         <ul class= "header-nav">
           <li>
@@ -43,48 +43,47 @@
         </li>
         </ul>
         </div>
-                <div class="home-mobile-content">
-                <div class="header-logo">
-                  <h1>MAD</h1>
-                </div>
-                </div>
-                   <!-- MENU - Social -->
-                   <div class="footer">
-                      <div class="nav-buttons">
-                      <div class="icons">
-                          <a href="index.html"> <img src="Mats/Home.png" alt=""> </a>
-                      </div>
-                      <div class="icons">
-                        <a href="Shop.html"> <img src="Mats/Store.png" alt=""> </a>
-                      </div>
-                      <div class="icons">
-                        <a href="Shop.html#/cart"> <img src="Mats/Cart.png" alt=""> </a>
-                      </div>
-                      <div class="icons">
-                        <a href="Signup.html"><img src="Mats/Login.png" alt=""> </a>
-                        </div >
-                      </div>
+      <!-- Mobile Navigation Menu -->
+       <div class="footer">
+          <div class="nav-buttons">
+          <div class="icons">
+              <a href="index.html"> <img src="Mats/Home.png" alt=""> </a>
+          </div>
+          <div class="icons">
+            <a href="Shop.html"> <img src="Mats/Store.png" alt=""> </a>
+          </div>
+          <div class="icons">
+            <a href="Shop.html#/cart"> <img src="Mats/Cart.png" alt=""> </a>
+          </div>
+          <div class="icons">
+            <a href="Signup.html"><img src="Mats/Login.png" alt=""> </a>
+            </div >
+          </div>
+             <!-- Social Media Links -->
+            <div class="socialmedias">
+            <div class="Twiiter">
+            <a href="https://twitter.com/xLordMaxx">  <img src="Mats/tw.png" alt=""> </a>
+            </div>
+            <div class="instagram">
+            <a href="https://www.instagram.com/maljimd/">  <img src="Mats/ig.png" alt=""> </a>
+            </div>
+            <div class="Youtube">
+            <a href="https://www.youtube.com/channel/UCpfUU1LbHd8aLt04fGJ4P0w">  <img src="Mats/yt.png" alt=""> </a>
+            </div>
+            <div class="Facebook">
+            <a href="https://www.facebook.com/aljim.deocampo">  <img src="Mats/fb.png" alt=""> </a>
+            </div>
+            <div class="Signup">
+            <a href="Signup.html">  <img src="Mats/su.png" alt=""> </a>
+            </div>
+          </div>
+        </div>
 
-                        <div class="socialmedias">
-                        <div class="Twiiter">
-                        <a href="https://twitter.com/xLordMaxx">  <img src="Mats/tw.png" alt=""> </a>
-                        </div>
-                        <div class="instagram">
-                        <a href="https://www.instagram.com/maljimd/">  <img src="Mats/ig.png" alt=""> </a>
-                        </div>
-                        <div class="Youtube">
-                        <a href="https://www.youtube.com/channel/UCpfUU1LbHd8aLt04fGJ4P0w">  <img src="Mats/yt.png" alt=""> </a>
-                        </div>
-                        <div class="Facebook">
-                        <a href="https://www.facebook.com/aljim.deocampo">  <img src="Mats/fb.png" alt=""> </a>
-                        </div>
-                        <div class="Signup">
-                        <a href="Signup.html">  <img src="Mats/su.png" alt=""> </a>
-                        </div>
-                      </div>
+        <!-- Next & Previous Page Buttons -->
+         <a class="prev" href="Taiga.html" >&#10094;</a>
+         <a class="next" href="index.html">&#10095;</a>
 
-                    </div>
-
+          <!-- Modal Button -->
         <button id="Btn">
           <img src="Mats/Bra.png" alt="">
           </button>
@@ -104,8 +103,6 @@
                </div>
                </div>
 
-
-
                <div class="tabcontent" id="SOCIALMEDIA">
                  <div class="social-flex">
                    <div class="flexbox-item-1">
@@ -120,7 +117,7 @@
                      <div class="slinks">
                        <a href="https://twitter.com/xLordMaxx"><h1>TWITTER</h1></a>
                      </div>
-                     <div class="slinks">
+                     <div class="slinks mslink">
                        <a href="https://www.youtube.com/channel/UCpfUU1LbHd8aLt04fGJ4P0w"><h1>YOUTUBE</h1></a>
                      </div>
                    </div>
@@ -131,8 +128,6 @@
            </div>
 
 
-
-
           <script>
 
           //Modal
@@ -141,7 +136,7 @@
           // button
           var btn = document.getElementById("Btn");
 
-          //Appear
+          //Appear on click
           btn.onclick = function() {
             modal.style.display = "block";
           }
@@ -154,7 +149,6 @@
              }
 
              //Tabs
-
                 let currentTab;
 
                 handleButtonClick = (evt) => {

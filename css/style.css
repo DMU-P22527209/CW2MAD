@@ -312,27 +312,6 @@
   border-color: white;
 }
 
-
-
-/*------------TAB AUDIO------------------*/
-
-.audio-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: : 30px;
-}
-
-.pause {
-  width: 30px;
-  background: black;
-  color: white;
-}
-.play {
-  background: black;
-  color: white;
-}
-
 /*--------------STORE-----------------*/
 
 .Stocks-container {
@@ -523,7 +502,7 @@ h6 {
 
 .sign {
   width: 100%;
-  padding: 10 0 10 0;
+  padding: 10px 0px 10px 0px;
   background-color: White;
   text-align: center;
   border-radius: 15px;
@@ -531,7 +510,7 @@ h6 {
 
 .sign a {
   width: 100%;
-  padding: 10 100
+  padding: 10px 100px;
   color: black;
   text-decoration: none;
 }
@@ -549,7 +528,7 @@ form input {
   border: 1px solid #c4c4c4;
   padding: 1em;
   margin-bottom: 1.25rem;
-  font: 0.875;
+  font: 0.875px;
 }
 
 label {
